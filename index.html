@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>progress circle</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+<header class="header">
+	
+</header>		<div class="container">
+			<div class="app-box">
+				<div class="app-box__title">Progress bar</div>
+				<div class="app-box__circle ">
+					<svg class="app-box__circle_svg-circle " id="svg-circle">
+						<circle cx="85" cy="85" r="80" fill="none" stroke-width="8"
+							stroke="rgb(170, 169, 169)" />
+						<path id="loader-arc1" d="M 85,85 m 0, -80 a 80,80 0 0,1 0,0" stroke="#ffcc00"
+							stroke-width="9" fill="none" />
+						<path id="loader-arc2" d="M 100, 100 m 0, 80 a 80,80 0 0,1 0,0" stroke="#ffcc00"
+							stroke-width="9" fill="none" />
+					</svg>
+				</div>
+				<div class="app-box__control-panel">
+					<div class="control-panel__item">
+						<div class="control-panel__value">
+							<input type="number" min="0" max="100" class="value-input" id="checkbox-value">
+							<label for="value">Value</label>
+						</div>
+					</div>
+					<div class="control-panel__item">
+						<div class="control-panel__checkbox ">
+							<input type="checkbox" class="checkbox-input" id="checkbox-animate"
+								onchange="CircleAnimate()">
+							<label for="checkbox">Animate</label>
+						</div>
+					</div>
+					<div class="control-panel__item">
+						<div class="control-panel__checkbox ">
+							<input type="checkbox" class="checkbox-input" id="checkbox-hide" onchange="CircleHide()">
+							<label for="checkbox">Hide</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<footer class="footer">
+	<div class="footer-content">
+		
+	</div>
+</footer>	</div>
+
+<script src="js/main.js"></script></body>
+
+</html>
